@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Poetry Website</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><a>Tate's</a> Poetry Database</div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="closeMenu()">Home</a></li>
+                <li><a href="#" onclick="closeMenu()">Poems</a></li>
+                <!-- <li><a href="#" onclick="closeMenu()">About</a></li>
+                <li><a href="#" onclick="closeMenu()">Contact</a></li> -->
+                <li><a href="#" onclick="closeMenu()">How to Write</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="description">
+        <!-- <h1>Nobody is supposed to see this website, if you're here, <u>you must be pretty special.</u></h1>
+        <p>Most of the Poems here are quite old, however, these poems are my way of remembering key people from my life. <b> Stay for a bit!</b></p> -->
+    </section>
+    <section class="sectionName">
+        <h2><u>Love</u></h2>
+    </section>
+    <section class="poems">
+        <div class="poem-card" onclick="showPoem('Poem Title', 'Poem Content')">
+            <h2>Poem 2</h2>
+        </div>
+        <div class="poem-card" onclick="showPoem('Regret Reprise', `You fell in love with me when I started to fall too,\nBut with my mind clouded, I thought you loved another, I hadn\'t a clue,\nBut you didn\'t love him at all, but it was far too late,\nFor I had already pushed these overdue feelings away,\nI started seeing another, alongside you on my mind,\nThe more we talked, the more I found you were quite hard to find,\nWhen my late love silently broke my heart,\nMy original feelings for you came back just as they did from the start,\nBut when my feelings for you started to feel like fate,\nYour heart for me had ceased, for I was simply far too late,\nNow as I sit in silence of my regret,\nI find it hard to keep this unreciprocted love, a secret.`)">
+            <h2>Regret Reprise</h2>
+        </div>
+    </section>
+    <section class="sectionName">
+        <h2><u>Joy</u></h2>
+    </section>
+    <section class="poems">
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem 4</h2>
+        </div>
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem 3</h2>
+        </div>
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem 2</h2>
+        </div>
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem 1</h2>
+        </div>
+    </section>
+    <section class="sectionName">
+        <h2><u>Peace</u></h2>
+    </section>
+    <section class="poems">
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem</h2>
+        </div>
+    </section>
+    <section class="sectionName">
+        <h2><u>Patience</u></h2>
+    </section>
+    <section class="poems">
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem</h2>
+        </div>
+    </section>
+    <section class="sectionName">
+        <h2><u>Kindness</u></h2>
+    </section>
+    <section class="poems">
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem</h2>
+        </div>
+    </section>
+    <section class="sectionName">
+        <h2><u>Goodness</u></h2>
+    </section>
+    <section class="poems">
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem</h2>
+        </div>
+    </section>
+    <section class="sectionName">
+        <h2><u>Faithfullness</u></h2>
+    </section>
+    <section class="poems">
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem</h2>
+        </div>
+    </section>
+    <section class="sectionName">
+        <h2><u>Gentleness</u></h2>
+    </section>
+    <section class="poems">
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem</h2>
+        </div>
+    </section>
+    <section class="sectionName">
+        <h2><u>Self-Control</u></h2>
+    </section>
+    <section class="poems">
+        <div class="poem-card" onclick="showPoem('Poem', 'I don\' want to live in a world, say,\nWhere being kind is a weakness sway,\n')">
+            <h2>Poem</h2>
+        </div>
+    </section>
+
+    <section class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-content"></p>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
